@@ -1,0 +1,145 @@
+**Git Commands for Development**
+
+---
+
+### **Setup and Initialization**
+1. Initialize a Git repository:
+   ```bash
+   git init
+   ```
+2. Add a remote repository:
+   ```bash
+   git remote add origin <repository-url>
+   ```
+3. Rename the default branch to `main`:
+   ```bash
+   git branch -M main
+   ```
+
+---
+
+### **Basic Workflow**
+1. Check the status of the repository:
+   ```bash
+   git status
+   ```
+2. Stage all changes for the next commit:
+   ```bash
+   git add .
+   ```
+3. Stage specific files:
+   ```bash
+   git add <file-name>
+   ```
+4. Commit changes with a message:
+   ```bash
+   git commit -m "Your descriptive commit message"
+   ```
+5. Push committed changes to GitHub:
+   ```bash
+   git push
+   ```
+6. Pull the latest changes from GitHub:
+   ```bash
+   git pull
+   ```
+
+---
+
+### **Branching (Optional for Advanced Development)**
+1. Create a new branch:
+   ```bash
+   git branch <branch-name>
+   ```
+2. Switch to a branch:
+   ```bash
+   git checkout <branch-name>
+   ```
+3. Create and switch to a new branch:
+   ```bash
+   git checkout -b <branch-name>
+   ```
+4. Merge a branch into the current branch:
+   ```bash
+   git merge <branch-name>
+   ```
+5. Delete a branch locally:
+   ```bash
+   git branch -d <branch-name>
+   ```
+
+---
+
+### **Remote Repository Management**
+1. Show configured remotes:
+   ```bash
+   git remote -v
+   ```
+2. Remove a remote:
+   ```bash
+   git remote remove origin
+   ```
+
+---
+
+### **Undo and Fix Mistakes**
+1. Undo the last commit (but keep changes in the working directory):
+   ```bash
+   git reset --soft HEAD~1
+   ```
+2. Remove changes from the working directory (revert to the last committed state):
+   ```bash
+   git checkout -- <file-name>
+   ```
+3. Unstage changes:
+   ```bash
+   git reset <file-name>
+   ```
+
+---
+
+### **Viewing Changes**
+1. View commit history:
+   ```bash
+   git log
+   ```
+2. View changes not yet staged:
+   ```bash
+   git diff
+   ```
+3. View changes between staged files and the last commit:
+   ```bash
+   git diff --cached
+   ```
+
+---
+
+git add . && git commit -m "Your commit message" && git push
+
+
+---
+
+@echo off
+
+:: Set the directory
+set TARGET_DIR=C:\Devlopment_Learn\machine_learning
+
+:: Change to the target directory
+cd /d "%TARGET_DIR%" || (
+    echo Directory not found!
+    exit /b
+)
+
+:: Add changes, commit, and push
+git add .
+git commit -m "Batch commit message"
+git push
+
+
+
+
+git init
+git remote add origin https://github.com/vishalsachan123/machine_learning.git
+git pull origin main
+git branch -d branch_name
+git branch -M main
