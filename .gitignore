@@ -3,3 +3,7 @@
 
 # Ignore environment variables file
 .env
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
