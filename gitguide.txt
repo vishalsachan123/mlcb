@@ -16,4 +16,19 @@ git pull origin main
 git fetch --prune
 
 git checkout -b feature1 origin/feature1 # want to make local branch from origin
+
+
+
+####---------------------------merge things--------------------------
+
+git merge main -m 'message'
+
+#back to previous
+git log --oneline
+git reset --hard abc123
+
+
+:wq #If you want to finish the merge
+:q! #If you want to cancel the merge
+
   
