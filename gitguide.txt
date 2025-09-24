@@ -1,0 +1,19 @@
+always work in localmain
+when work completed then update your origin/localmain using ```git push origin localmain:localmain```
+
+if ever you want to update main with localmain then ```git push origin localmain:main```
+
+
+
+before working always pull and sync with remote ```git pull origin main``` this will pull remote main and merge into current branch
+
+
+git push origin localmain:localmain
+git push origin localmain:main --force
+git pull origin localmain
+git pull origin main
+
+git fetch --prune
+
+git checkout -b feature1 origin/feature1 # want to make local branch from origin
+  
